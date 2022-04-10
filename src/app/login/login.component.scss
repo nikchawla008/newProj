@@ -1,0 +1,48 @@
+.half{
+    overflow: hidden;
+    height: 100vh;
+    .bg{
+        width: 30%;
+        background: url('../../assets/Minoan_PS1_S001\ 1.jpg') no-repeat center;
+        margin: 20px;
+        border-radius: 12px;
+        background-size: cover;
+    }
+    .content{
+        width: 70%;
+    }
+}
+
+.form-group{
+    padding: 10px 0 10px 0;
+}
+
+input{
+    border: 1px solid #242424;
+    border-radius: 46px;
+    line-height: 35px;
+}
+
+h4{
+    font-size: 36px;
+    line-height: 43px;
+}
+
+h2{
+    font-size: 74px;
+    color: #FFFFFF;
+    margin-left: 1.5rem;
+    font-family: 'Neue Montreal';
+    font-style: normal;
+    font-weight: 400;
+}
+
+.loginBtn{
+    background-color: #242424;
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30.1px;
+    border-radius: 50px;
+    margin-top: 10px;
+}

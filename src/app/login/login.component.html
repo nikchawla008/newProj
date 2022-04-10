@@ -1,0 +1,49 @@
+<div class="d-lg-flex half">
+    <div class="bg order-2 order-md-1">
+        <div class="img-text mt-4 ml-2">
+            <h2>Minoan</h2>
+        </div>
+    </div>
+    <div class="content order-1 order-md-2">
+        <div class="container">
+            <div class="row align-items-center justify-content-center" style="height: 100vh;">
+                <div class="col-md-5">
+                    <form [formGroup]="loginForm!" (ngSubmit)="onLogin()">
+                        <div class="form-group">
+                            <h4 class="mb-4">CMS Login</h4>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control custom_login_input" placeholder="Email" formControlName="email">
+                            <small class="text-danger" *ngIf="loginForm?.get('email')?.hasError('required') && loginForm?.get('email')?.touched">
+                                Email is Required
+                            </small>
+                            <small class="text-danger" *ngIf="loginForm?.get('email')?.hasError('email') && loginForm?.get('email')?.touched">
+                                Email format is incorrect
+                            </small>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control custom_login_input" placeholder="Password" formControlName="password">
+                            <small class="text-danger" *ngIf="loginForm?.get('password')?.hasError('required') && loginForm?.get('password')?.touched">
+                                Password is Required
+                            </small>
+                        </div>
+                        <div class="form-group">
+                            <a style="float: right; cursor: pointer;">Forgot Password?</a>
+                        </div>
+                        <div>
+                            <button class="btn loginBtn w-100" type="submit">
+                                <span>
+                                    <span style="float:left">Login</span>
+                                    <i class="fas fa-arrow-right" style="float: right; margin-top: 0.35rem;"></i>
+                                </span>
+                            </button>
+                        </div>
+                    </form>
+                    
+                </div>
+            </div>
+            
+        
+        </div>
+    </div>
+</div>

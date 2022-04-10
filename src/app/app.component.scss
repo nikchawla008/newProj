@@ -1,0 +1,17 @@
+.wrapper{
+    &.collapsed{
+        margin-left: 240px;
+    }
+    &.notCollapsed{
+        margin-left: 100px;
+    }
+}
+
+
+.wrapper-collapsed{
+    margin-left: 240px;
+}
+
+.wrapper-notCollapsed{
+    margin-left: 100px;
+}

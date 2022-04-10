@@ -1,0 +1,31 @@
+<aside [ngClass]="{'nav-menu': textVisible, 'nav-menu-collapse':!textVisible}">
+            <div>
+                <img src="../../assets/MinoanLogo.jpg" alt="Minoan Logo" [ngClass]="{'minoan-logo':textVisible, 'minoan-logo-small':!textVisible}">
+                <p>Admin</p>
+                <i class="fa-solid fa-align-justify" (click)="menuButton()"></i>
+            </div>
+            <nav>
+                <ul>
+                    <li class="active" [ngClass]="{'nav-item': textVisible, 'nav-item-collapse':!textVisible}" routerLinkActive="active" routerLink="/home">
+                        <a class="nav-link">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li [ngClass]="{'nav-item': textVisible, 'nav-item-collapse':!textVisible}" routerLinkActive="active">
+                        <a class="nav-link">ABCD <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li [ngClass]="{'nav-item': textVisible, 'nav-item-collapse':!textVisible}" routerLinkActive="active">
+                        <a class="nav-link">XYZ  <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li [ngClass]="{'nav-item': textVisible, 'nav-item-collapse':!textVisible}" routerLinkActive="active">
+                        <a class="nav-link">akjxn <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li [ngClass]="{'nav-item': textVisible, 'nav-item-collapse':!textVisible}" routerLinkActive="active">
+                        <a class="nav-link">xawx <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li [ngClass]="{'nav-item': textVisible, 'nav-item-collapse':!textVisible}" routerLinkActive="active">
+                        <a class="nav-link">kkj<span class="sr-only">(current)</span></a>
+                    </li>
+
+
+                </ul>
+            </nav>
+        </aside>
