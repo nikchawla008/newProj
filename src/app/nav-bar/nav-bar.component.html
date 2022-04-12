@@ -1,28 +1,40 @@
 <aside [ngClass]="{'nav-menu': textVisible, 'nav-menu-collapse':!textVisible}">
             <div>
                 <img src="../../assets/MinoanLogo.jpg" alt="Minoan Logo" [ngClass]="{'minoan-logo':textVisible, 'minoan-logo-small':!textVisible}">
-                <p>Admin</p>
-                <i class="fa-solid fa-align-justify" (click)="menuButton()"></i>
+                <p>Admin <span *ngIf="textVisible">Portal</span></p>
+                <div class="hamburger"  (click)="menuButton()"><i class="fa-solid fa-align-justify"></i></div>
             </div>
             <nav>
                 <ul>
-                    <li class="active" [ngClass]="{'nav-item': textVisible, 'nav-item-collapse':!textVisible}" routerLinkActive="active" routerLink="/home">
-                        <a class="nav-link">Home <span class="sr-only">(current)</span></a>
+                    <li class="active" [ngClass]="{'nav-item': textVisible, 'nav-item-collapse':!textVisible}"  routerLinkActive="active" routerLink="/home">
+                        <a class="nav-link"><i class="fa-solid fa-key"></i> <span>Spaces</span></a>
                     </li>
                     <li [ngClass]="{'nav-item': textVisible, 'nav-item-collapse':!textVisible}" routerLinkActive="active">
-                        <a class="nav-link">ABCD <span class="sr-only">(current)</span></a>
+                        <a class="nav-link"><i class="fa-solid fa-tag"></i> <span>Brands</span></a>
                     </li>
                     <li [ngClass]="{'nav-item': textVisible, 'nav-item-collapse':!textVisible}" routerLinkActive="active">
-                        <a class="nav-link">XYZ  <span class="sr-only">(current)</span></a>
+                        <a class="nav-link"><i class="fa-solid fa-cart-shopping"></i> <span>Spaces Store</span></a>
                     </li>
                     <li [ngClass]="{'nav-item': textVisible, 'nav-item-collapse':!textVisible}" routerLinkActive="active">
-                        <a class="nav-link">akjxn <span class="sr-only">(current)</span></a>
+                        <a class="nav-link"><i class="fa-solid fa-truck"></i> <span>Shipping Rules</span></a>
                     </li>
                     <li [ngClass]="{'nav-item': textVisible, 'nav-item-collapse':!textVisible}" routerLinkActive="active">
-                        <a class="nav-link">xawx <span class="sr-only">(current)</span></a>
+                        <a class="nav-link"><i class="fa-solid fa-display"></i> <span>Minoan Website</span></a>
                     </li>
                     <li [ngClass]="{'nav-item': textVisible, 'nav-item-collapse':!textVisible}" routerLinkActive="active">
-                        <a class="nav-link">kkj<span class="sr-only">(current)</span></a>
+                        <a class="nav-link"><i class="fa-solid fa-user-check"></i> <span>Campaigns</span></a>
+                    </li>
+                    <li [ngClass]="{'nav-item': textVisible, 'nav-item-collapse':!textVisible}" routerLinkActive="active">
+                        <a class="nav-link"><i class="fa-solid fa-dollar-sign"></i> <span>Merchant Payments</span></a>
+                    </li>
+                    <li [ngClass]="{'nav-item': textVisible, 'nav-item-collapse':!textVisible}" routerLinkActive="active">
+                        <a class="nav-link"><i class="fa-solid fa-user"></i> <span>Clients</span></a>
+                    </li>
+                    <li [ngClass]="{'nav-item': textVisible, 'nav-item-collapse':!textVisible}" routerLinkActive="active">
+                        <a class="nav-link"><i class="fa-solid fa-gear"></i> <span>Settings</span></a>
+                    </li>
+                    <li [ngClass]="{'nav-item': textVisible, 'nav-item-collapse':!textVisible}" routerLinkActive="active">
+                        <a class="nav-link"><i class="fa-solid fa-right-from-bracket"></i> <span>Logout</span></a>
                     </li>
 
 

@@ -2,128 +2,143 @@
     background-color: #fafafa;
     position: fixed;
     height: 100vh;
-    width: 229px;
+    width: 220px;
     transition: all 200ms linear;
+    div{
+        padding-left: 14px;
+        display: flex;
+        flex-direction: column;
+        gap: 1%;
+            p{
+                font-size: 14px;
+                margin-left: 5px;
+            }
+            .minoan-logo {
+                padding-top: 30px;
+                width: 106px;
+                height: 56px;
+                margin-left: 7px;
+                content: url('../../assets/MinoanLogo.jpg');
+            }
+            
+    }
+    nav{
+        ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            li.nav-item{
+                padding: 10px 0 10px 20px;
+                cursor: pointer;
+                text-decoration: none;
+                color: #403d52;
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                font-size: 14px;
+                &:active{
+                    background-color: #ffff;
+                    color: #ae864a;
+                }
+                a{
+                    padding: 10px 0 10px 10px;
+                    cursor: pointer;
+                    text-decoration: none;
+                    color: #403d52;
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+                    font-size: 14px;
+                    i{
+                        display: block;
+                    }
+                    span{
+                        padding-left: 10px;
+                        display: block;
+                    }
+                }
+                
+            }
+        }
+        
+    }
 }
-
-.nav-menu > div {
-    padding-left: 14px;
-    display: flex;
-    flex-direction: column;
-    gap: 1%;
-}
-
-.nav-menu > div > p {
-    font-size: 14px;
-    margin-left: 5px;
-}
-
-.nav-menu div h1,
-p {
-    margin: 0;
-    padding: 0;
-}
-
-.minoan-logo {
-    padding-top: 30px;
-    width: 106px;
-    height: 56px;
-    margin-left: 7px;
-}
-
-.minoan-logo-small {
-    padding-top: 30px;
-    width: 28px;
-    height: 56px;
-    margin-left: 7px;
-}
-
-.hamburger {
-    padding-top: 24px;
-    padding-bottom: 20px;
-    width: 24px;
-    height: 68px;
-    cursor: pointer;
-}
-
-.nav-menu p {
-    padding-top: 4px;
-}
-
-.nav-menu ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-/* collapsed */
 
 .nav-menu-collapse {
     padding-right: 0;
     max-width: 75px;
-    padding-right: 0;
     height: 100vh;
     background-color: #fafafa;
     position: fixed;
+    div{
+        padding-left: 5px;
+        padding-right: 5px;
+        display: flex;
+        flex-direction: column;
+        gap: 1%;
+            p{
+                font-size: 14px;
+                margin-left: 0px;
+            }
+            .minoan-logo-small {
+                padding-top: 30px;
+                width: 28px;
+                height: 56px;
+                margin-left: 7px;
+                content: url('../../assets/MinoanLogoSmall.jpg');
+            }
+            .hamburger{
+                text-align: center;
+            }
+    }
+    nav{
+        ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            li.nav-item-collapse{
+                padding: 10px 0 10px 20px;
+                cursor: pointer;
+                text-decoration: none;
+                color: #403d52;
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                font-size: 14px;
+                &:active{
+                    background-color: #ffff;
+                    color: #ae864a;
+                }
+                a{
+                    padding: 10px 0 10px 0;
+                    cursor: pointer;
+                    text-decoration: none;
+                    color: #403d52;
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+                    font-size: 14px;
+                    i{
+                        display: block;
+                    }
+                    span{
+                        display: none;
+                    }
+                }
+                
+            }
+        }
+        
+    }
 }
 
-.nav-menu-collapse > div {
-    padding-left: 14px;
-    padding-right: 14px;
-    display: flex;
-    /* align-items: center; */
-}
 
-/* .nav-menu-collapse > div > p {
-    font-size: 10px;
-} */
-
-.gold-pill {
-    display: block;
-    width: 4px;
-    height: 30px;
-    margin: 0 7px 0 7px;
-    border-radius: 35px;
-}
-
-.nav-item:active {
-    background-color: #ffff;
-    color: #ae864a;
-}
-
-.nav-item a {
-    padding: 18px 0 18px 0;
+.hamburger {
+    padding-top: 24px;
+    padding-bottom: 20px;
+    // width: 24px;
+    height: 68px;
     cursor: pointer;
-    text-decoration: none;
-    color: #403d52;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    font-size: 14px;
-}
-
-.nav-item a span {
-    padding-left: 10px;
-}
-
-.nav-item a:focus {
-    filter: invert(59%) sepia(12%) saturate(1716%) hue-rotate(357deg)
-        brightness(91%) contrast(83%);
-}
-
-.active {
-    background: #fafafa;
-}
-
-.pad-9 {
-    padding-left: 9px;
-    transition: opacity 225ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
-
-.pad-left {
-    padding-left: 9px;
-}
-
-.nav-item-collapse > a > img {
-    padding-left: 0;
+    padding-left: 30px;
+    
 }

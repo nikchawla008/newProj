@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 @Component({
   selector: 'app-root',
@@ -12,14 +12,15 @@ export class AppComponent implements OnInit {
 
   isNavBarCollapsed = false
 
-  constructor( private router: Router){}
+  constructor( private router: Router, private cd: ChangeDetectorRef){}
   
   ngOnInit(): void {
 
+    this.cd.detectChanges();
     this.router.events.subscribe(event => {
 
       if(event instanceof NavigationEnd){
-        if(event.url.includes('/login')){
+        if(event.url.includes('/login') || event.urlAfterRedirects.includes('/login')){
           this.isLoginPage = true;
         }
         else{
